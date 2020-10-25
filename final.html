@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor Lizard Spock</title>
+    
+</head>
+<body>
+    <div class="container">
+
+        <header id="header">
+            <h1> Rock. Paper. Scissor.<br> Lizard. Spock. </h1>
+            <ul id="navbar">
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#play">Play</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </header>
+
+        <section id="rules">
+            <div id="block">
+                <h1>#Rules</h1>
+                <div id="ruleblock">
+                    <div id="firstblock">
+                        <li>Scissors cuts Paper.</li>
+                        <li>Paper covers Rock.</li>
+                        <li>Rock crushes Lizard.</li>
+                        <li>Lizard poisons Spock.</li>
+                        <li>Spock smashes Scissors.</li>
+                        <li>Scissors decapitates Lizard.</li>   
+                    </div>
+                    <div id="secondblock">
+                        <li> Lizard eats Paper.</li>
+                        <li>Paper disproves Spock.</li>
+                        <li>Spock vaporizes Rock.</li>
+                        <li>(and as it always has)</li>
+                        <li>Rock crushes Scissors.</li>   
+                    </div>
+                </div>        
+            </div>      
+        </section>
+    
+        <section id="play">
+            <ul id="scoreboard">
+                <div id='player'>
+                    <li>Player:</li><span id="player-score">0</span>
+                </div>
+                <div id='computer'>
+                    <li>Computer:</li><span id="computer-score">0</span>
+                </div>
+               
+            </ul>
+            
+            <div id="player" class="options">
+                <!-- <button class="choice" value="rock">Rock</button><br>
+                <button class="choice" value="paper">Paper</button><br>
+                <button class="choice" value="scissors">Scissors</button><br>
+                <button class="choice" value="lizard">Lizard</button><br>
+                <button class="choice" value="spock">Spock</button><br> -->
+                <img class="choice" id="rock" src="icons/rock.png" alt="rock">
+                <img class="choice" id="paper" src="icons/paper.png" alt="paper">
+                <img class="choice" id="scissors" src="icons/scissors.png" alt="scissors">
+                <img class="choice" id="lizard" src="icons/lizard.png" alt="lizard">
+                <img class="choice" id="spock" src="icons/spock2.png" alt="spock">
+                <p id="text"><b> Select an option to play </b></p>
+            </div>        
+        </section>
+
+        <section id='about' class="about">
+            <div class="about-container">
+                <img id='rpsls' src="images/rpsls3.png" alt="Rock Paper Scissor Lizard Spock Image">
+                <div class="about-content">
+                    <p>Sam Kass invented this game (with Karen Bryla) because it seems like when you know someone well enough, 75-80% of any Rock-Paper-Scissors games you play with that person end up in a tie. Well, here is a slight variation that reduces that probability. (Note that for those of you who like to swing your fist back and forth and say, "Rock, Paper, Scissors, GO!", might want to continue to do that, replacing "Rock" with "One," "Paper" with "Two," and "Scissors" with "Three.") This version is also nice because it satisfies the Law of Fives.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id='result-header'>
+                <h1>Result</h1>
+                <button class='close-btn'> X </button>
+            </div>
+            <div id='result-content'>
+                <span id="reason"></span><br><br>
+                <span id="winner"></span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="logic.js"></script>
+</body>
+</html>
