@@ -6,6 +6,6 @@ A simple rock paper scisssor lizard spock online game form the popular sitcom 'T
 It is a simple game but not built in the conventional way. 
 
 This is an extendable rock, paper, scissors variant, that means adding objects like lizard & spock doesn't means we have to add more if/else loops
-we simply make object of the respective new characters and add them to an array. 
+we simply make objects of the respective new characters and add them to an array no need to edit the checking logic. 
 
 
